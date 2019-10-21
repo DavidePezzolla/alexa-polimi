@@ -1,0 +1,112 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "università",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ExamOfSessionIntent",
+                    "slots": [],
+                    "samples": [
+                        "quali esami ci sono il prossimo appello"
+                    ]
+                },
+                {
+                    "name": "ImportMyExamsIntent",
+                    "slots": [],
+                    "samples": [
+                        "di importare i miei esame",
+                        "di importare i miei corsi",
+                        "importa i miei esami",
+                        "importa i miei corsi"
+                    ]
+                },
+                {
+                    "name": "ExamAverageIntent",
+                    "slots": [],
+                    "samples": [
+                        "qual è la mia media"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ExamDateIntent",
+                    "slots": [
+                        {
+                            "name": "exam_name",
+                            "type": "exam_name"
+                        }
+                    ],
+                    "samples": [
+                        "quando è l'esame di {exam_name}"
+                    ]
+                },
+                {
+                    "name": "SuggestExamPlanIntent",
+                    "slots": [],
+                    "samples": [
+                        "quali esami dovrei dare ",
+                        "suggeriscimi un piano d'esami"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "exam_name",
+                    "values": [
+                        {
+                            "id": "inf",
+                            "name": {
+                                "value": "Informatica"
+                            }
+                        },
+                        {
+                            "id": "apa",
+                            "name": {
+                                "value": "Algoritmi e Programmazione Avanzata"
+                            }
+                        },
+                        {
+                            "id": "termo",
+                            "name": {
+                                "value": "Termodinamica"
+                            }
+                        },
+                        {
+                            "id": "chi",
+                            "name": {
+                                "value": "Chimica"
+                            }
+                        },
+                        {
+                            "id": "fis",
+                            "name": {
+                                "value": "Fisica"
+                            }
+                        },
+                        {
+                            "id": "ans",
+                            "name": {
+                                "value": "Analisi"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
