@@ -3,6 +3,11 @@ var moment = require('moment');
 var _ = require('lodash');
 
 module.exports = {    
+    copy_me_: async function(attributesManager, now){
+        // this is an example function that load data of your exams.
+        let s3Attributes = await get_s3_data(attributesManager)
+        
+    },
     set_exams: function(attributesManager){
         let todo_exam = agenda.my_exam
         set_s3_data(attributesManager, todo_exam)
