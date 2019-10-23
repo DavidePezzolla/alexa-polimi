@@ -19,14 +19,17 @@
                     "name": "ExamOfSessionIntent",
                     "slots": [],
                     "samples": [
-                        "quali esami ci sono il prossimo appello"
+                        "quali esami ci sono il prossimo appello",
+                        "quali esami ci sono nel prossimo appello",
+                        "quali esami ci saranno nel prossimo appello",
+                        "quali esami ci saranno al prossimo appello"
                     ]
                 },
                 {
                     "name": "ImportMyExamsIntent",
                     "slots": [],
                     "samples": [
-                        "di importare i miei esame",
+                        "di importare i miei esami",
                         "di importare i miei corsi",
                         "importa i miei esami",
                         "importa i miei corsi"
@@ -36,7 +39,10 @@
                     "name": "ExamAverageIntent",
                     "slots": [],
                     "samples": [
-                        "qual è la mia media"
+                        "qual è la mia media",
+                        "calcola la mia media",
+                        "di calcolare la mia media",
+                        "di dirmi la mia media"
                     ]
                 },
                 {
@@ -60,7 +66,9 @@
                     "slots": [],
                     "samples": [
                         "quali esami dovrei dare ",
-                        "suggeriscimi un piano d'esami"
+                        "suggeriscimi un piano d'esami",
+                        "di suggerirmi un piano d'esami",
+                        "quali esami è meglio dare"
                     ]
                 }
             ],
