@@ -11,10 +11,10 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = `Ciao! Sono qui per aiutarti a gestire i tuoi esami ed a crearti più tempo libero! Chiedimi quali esami devi dare.`;
+        const speechText = `Ciao! Sono qui per aiutarti a gestire i tuoi esami ed a crearti più tempo libero! Posso dirti la tua media o darti informazioni sugli esami. Cosa vuoi fare?`;
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt("Cosa vorresti fare?")
             .getResponse();
     }
 };
@@ -64,8 +64,8 @@ const ImportMyExamsIntentHandler = {
         const attributesManager = handlerInput.attributesManager;
         S3.set_exams(attributesManager)        
         return handlerInput.responseBuilder
-            .speak(`Ok, ho importato i tuoi esami. Chiedimi quali esami puoi dare.`)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            .speak(`Ok, ho importato i tuoi esami. Cosa vuoi fare?`)
+            .reprompt('Cosa vorresti fare?')
             .getResponse();
     }
 };
@@ -76,7 +76,7 @@ const HelpIntentHandler = {
             && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
-        const speechText = `Ciao, posso aiutarti durante le tue giornate all'<lang xml:lang="en-GB">Xchange</lang>. Chiedimi di importare la tua agenda o dove devi andare.`;
+        const speechText = `Ciao, posso aiutarti durante le tue giornate all'<lang xml:lang="en-GB">Xchange</lang>. Chiedimi di importare i tuoi corsi.`;
 
         return handlerInput.responseBuilder
             .speak(speechText)
